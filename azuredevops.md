@@ -21,7 +21,7 @@ based on the specified event.
 | `id`                  | "id" value                                                  |
 | `source`              | "resource.url" value                                        |
 | `specversion`         | `1.0`                                                       |
-| `type`                | `com.azuredevops.build.complete.` + "resource.status" value |
+| `type`                | `com.azuredevops.build.complete.` + "resource.status" value + "resource.reason" |
 | `datacontentencoding` | Omit                                                        |
 | `datacontenttype`     | `application/json`                                          |
 | `dataschema`          | Omit                                                        |
@@ -160,7 +160,7 @@ based on the specified event.
 | `id`                  | "id" value                     |
 | `source`              | "resource.url" value           |
 | `specversion`         | `1.0`                          |
-| `type`                | `com.azuredevops.code.checkin` |
+| `type`                | `com.azuredevops` + "eventType" value |
 | `datacontentencoding` | Omit                           |
 | `datacontenttype`     | `application/json`             |
 | `dataschema`          | Omit                           |
@@ -175,7 +175,7 @@ based on the specified event.
 | `id`                  | "id" value                      |
 | `source`              | "resource.repository.url" value |
 | `specversion`         | `1.0`                           |
-| `type`                | `com.azuredevops.code.push`     |
+| `type`                | `com.azuredevops` + "eventType" value     |
 | `datacontentencoding` | Omit                            |
 | `datacontenttype`     | `application/json`              |
 | `dataschema`          | Omit                            |
@@ -190,7 +190,7 @@ based on the specified event.
 | `id`                  | "id" value                                 |
 | `source`              | "resource.repository.url" value            |
 | `specversion`         | `1.0`                                      |
-| `type`                | `com.azuredevops.code.pullrequest.created` |
+| `type`                | `com.azuredevops` + "eventType" value      |
 | `datacontentencoding` | Omit                                       |
 | `datacontenttype`     | `application/json`                         |
 | `dataschema`          | Omit                                       |
@@ -205,7 +205,7 @@ based on the specified event.
 | `id`                  | "id" value                                |
 | `source`              | "resource.repository.url" value           |
 | `specversion`         | `1.0`                                     |
-| `type`                | `com.azuredevops.code.pullrequest.merged` |
+| `type`                | `com.azuredevops` + "eventType" value   |
 | `datacontentencoding` | Omit                                      |
 | `datacontenttype`     | `application/json`                        |
 | `dataschema`          | Omit                                      |
@@ -220,7 +220,7 @@ based on the specified event.
 | `id`                  | "id" value                                                           |
 | `source`              | "resource.repository.url" value                                      |
 | `specversion`         | `1.0`                                                                |
-| `type`                | `com.azuredevops.code.pullrequest.updated`                           |
+| `type`                | `com.azuredevops` + "eventType" value                          |
 | `datacontentencoding` | Omit                                                                 |
 | `datacontenttype`     | `application/json`                                                   |
 | `dataschema`          | Omit                                                                 |
